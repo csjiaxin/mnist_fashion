@@ -92,10 +92,10 @@ def setup_data(batch_size=128, val_ratio=0.1):
         ]
     )
 
-    full_train_dataset = torchvision.datasets.MNIST(
+    full_train_dataset = torchvision.datasets.FashionMNIST(
         root="./data", train=True, download=True, transform=transform
     )
-    test_dataset = torchvision.datasets.MNIST(
+    test_dataset = torchvision.datasets.FashionMNIST(
         root="./data", train=False, download=True, transform=transform
     )
 
