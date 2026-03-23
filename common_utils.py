@@ -88,7 +88,7 @@ def setup_data(batch_size=128, val_ratio=0.1):
     transform = transforms.Compose(
         [
             transforms.ToTensor(),
-            # transforms.Normalize((0.1307,), (0.3081,)),
+            transforms.Normalize((0.1307,), (0.3081,)),
         ]
     )
 
